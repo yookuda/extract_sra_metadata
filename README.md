@@ -1,6 +1,6 @@
 ## NCBI_SRA_Metadataの展開
 NCBI_SRA_Metadata_Full_yyyymmdd.tar.gzを展開する。
-そのまま展開すると1ディレクトリに135万ディレクトリ作成されてしまうので、DRA, ERA, SRAごとに1000 accessionずつディレクトリを分けて展開する。
+そのまま展開すると1ディレクトリに135万ディレクトリ作成されてしまうので、DRA, ERA, SRAごとにアクセッションの上位3桁でサブディレクトリを作って展開する。
 
 ```
 $ time python3 extract.py NCBI_SRA_Metadata_Full_20190810.tar.gz
